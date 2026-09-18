@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "SiteContent": {
+      "title": "SiteContent",
+      "description": "Complete configuration and content of the Al-Fahad IT institute website",
+      "type": "object",
+      "properties": {
+        "instituteName": { "type": "string", "maxLength": 200 },
+        "instituteSubtitle": { "type": "string", "maxLength": 200 },
+        "instituteTagline": { "type": "string", "maxLength": 300 },
+        "heroBadge": { "type": "string", "maxLength": 200 },
+        "heroHeadline": { "type": "string", "maxLength": 200 },
+        "heroHeadlineHighlight": { "type": "string", "maxLength": 200 },
+        "heroSubtext": { "type": "string", "maxLength": 1000 },
+        "aboutText1": { "type": "string", "maxLength": 2000 },
+        "aboutText2": { "type": "string", "maxLength": 2000 },
+        "aboutImage": { "type": "string", "maxLength": 500000 },
+        "communityTitle": { "type": "string", "maxLength": 200 },
+        "communitySubtitle": { "type": "string", "maxLength": 500 },
+        "communityImage": { "type": "string", "maxLength": 500000 },
+        "contact": { "type": "object" },
+        "stats": { "type": "object" },
+        "videoInfo": { "type": "object" },
+        "courses": { "type": "array" },
+        "mentors": { "type": "array" },
+        "students": { "type": "array" },
+        "gallery": { "type": "array" },
+        "adminPassword": { "type": "string", "maxLength": 100 },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["instituteName"]
+    }
+  },
+  "firestore": {
+    "/site_settings/content": {
+      "schema": "SiteContent",
+      "description": "Live configuration and real-time site data for Al-Fahad IT Institute"
+    }
+  }
+}

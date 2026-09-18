@@ -1,0 +1,6 @@
+{
+  "name": "Al-Fahad IT",
+  "description": "Official website and admin management system for Al-Fahad IT Computer Training Institute, with course explorer, mentor profiles, student verification, gallery, and dynamic site controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
